@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build &&gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
@@ -23,6 +25,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://ghdnjs18.github.io/begin-react",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
